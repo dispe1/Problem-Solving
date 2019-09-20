@@ -1,5 +1,6 @@
 # https://algospot.com/judge/problem/read/QUADTREE
 
+#O(n)
 def reverse(it):
     #기저 사례: 첫 글자가 b 또는 w인 경우
     if it[0] == 'b' or it[0] == 'w':

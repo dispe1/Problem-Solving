@@ -13,7 +13,7 @@ def normalize(num):
 
     while len(num) > 1 and num[-1] == 0: num.pop()
 
-#두 긴 자연수의 곱을 반환한다.
+#두 긴 자연수의 곱을 반환한다. O(N^2)
 #각 배열에는 각 수의 자릿수가 1의 자리에서부터 시작해 저장되어 있다.
 #예: multiple([3, 2, 1], [6, 5, 4]) = 123 * 456 = 56088 = [8, 8, 0, 6, 5]
 def multiple(a, b):
@@ -39,7 +39,7 @@ def subFrom(a, b):
         a[i] -= b[i]
     normalize(a)
 
-#두 긴 정수의 곱을 반환한다.
+#두 긴 정수의 곱을 반환한다. O(N^lg3)
 def karatsuba(a, b):
     an, bn = len(a), len(b)
     #a가 b보다 짧을 경우 둘을 바꾼다.

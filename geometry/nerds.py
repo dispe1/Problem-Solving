@@ -4,7 +4,7 @@ from vector import ccw2
 from vector import isInside
 from vector import segmentIntersects
 
-#블록 껍질을 찾는 선물 포장 알고리즘의 구현
+#블록 껍질을 찾는 선물 포장 알고리즘의 구현 O(N^2)
 #points에 있는 점들을 모두 포함하는 최소의 볼록 다각형을 찾는다.
 def giftWrap(points):
     n = len(points)
@@ -29,7 +29,7 @@ def giftWrap(points):
         hull.append(next)
     return hull
 
-#두 블록 다각형의 교차 여부를 확인하는 polygonIntersects() 함수의 구현
+#두 블록 다각형의 교차 여부를 확인하는 polygonIntersects() 함수의 구현 O(AB)
 #두 다각형이 서로 닿거나 겹치는지 여부를 반환한다.
 #한 점이라도 겹친다면 True를 반환한다.
 def polygonIntersects(p, q):

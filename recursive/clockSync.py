@@ -30,7 +30,7 @@ def push(clocks, switch):
 #clocks: 현재 시계들의 상태
 #switch: 이벤에 누를 스위치의 번호
 #가 주어질 때, 남은 스위치들을 눌러서 clocks를 12시로 맞출 수 있는 최소 횟수를 반환한다.
-#만약 불가능하다면 sys.maxsize를 반환한다.
+#만약 불가능하다면 sys.maxsize를 반환한다. 경우의 수 :4^10 = 1048576개
 def solve(clocks, switch):
     if switch == SWITCHES: return 0 if areAligned(clocks) else sys.maxsize
     #이 스위치를 0번 누르는 경우부터 세 번 누르는 경우까지를 모두 시도한다.

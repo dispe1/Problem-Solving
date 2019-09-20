@@ -1,5 +1,7 @@
 # https://algospot.com/judge/problem/read/CHRISTMAS
 
+#두 함수의 시간 복잡도는 모두 O(N+K)
+
 #psum[i] = sum(arr[0:i+1]) % k
 #D[]의 부분 합 배열 psum[]과 k가 주어질 때, 몇 가지 방법으로 살 수 있는지 반환한다.
 #psum[]의 첫 번째 원소 전에 0을 삽입했다고 가정한다.

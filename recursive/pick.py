@@ -8,7 +8,7 @@ def pick(n, picked, toPick):
         print(picked)
     else:
         #고를 수 있는 가장 작은 번호
-        smallest = 0 if len(picked) == 0 else picked[-1]+1
+        smallest = 0 if not picked else picked[-1] + 1
         #이 단계에서 원소 하나 고름
         for next in range(smallest, n):
             picked.append(next)

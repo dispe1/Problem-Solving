@@ -2,7 +2,7 @@
 
 #각 판자의 높이를 저장하는 배열
 h = [7, 1, 5, 9, 6, 7, 3]
-#h[left:right] 구간에서 찾아낼 수 잇는 가장 큰 사각형의 넓이를 반환한다.
+#h[left:right] 구간에서 찾아낼 수 잇는 가장 큰 사각형의 넓이를 반환한다. O(nlgn)
 def solve(left, right):
     #기저 사례: 판자가 하나 밖에 없는 경우
     if left == right: return h[left]

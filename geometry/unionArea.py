@@ -1,4 +1,4 @@
-#직사각형 합집합의 면적을 구하는 unionArea()함수 구현
+#직사각형 합집합의 면적을 구하는 unionArea()함수 구현 O(N^2)
 #Rectangle = (x1, y1, x2, y2) | x1 < x2, y1 < y2
 def unionArea(rects):
     if len(rects) == 0: return 0

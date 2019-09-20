@@ -57,6 +57,7 @@ def karatsuba(a, b):
     addTo(ret, z2, half + half)
     return ret
 
+#O(N^lg3)
 def hugs(members, fans):
     m, f = len(members), len(fans)
     a = [0 if i == 'F' else 1 for i in members]
